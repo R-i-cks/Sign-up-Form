@@ -1,3 +1,14 @@
+:root{
+    --header-height: 25vh;
+    --footer-height: 28vh;
+    --background-color: linear-gradient(to bottom, #d3ebcd 0%, #aedbce 100%);
+    --form-color: white;
+}
+
+
+
+
+
 body{
     display: flex;
     flex-direction: row;
@@ -13,6 +24,7 @@ body{
 
 .form-container{
     display: flex;
+    flex-direction: column;
     flex: 2;
     background-color:blanchedalmond;
     height: 100vh;
@@ -28,19 +40,46 @@ body{
 
 }
 
+a:visited{
+    color:crimson;
+}
+
+a:link{
+    color:cadetblue
+}
+
 .hover-strip{
     display: flex;
     position: absolute;
     background: black;
-    top: 40%;
-    text-align: center;
+    top: 30%;
     width:100%;
     height: 15%;
     opacity: 70%;
     justify-content: center;
     color:cornsilk;
-    font-size:xx-large;
+}
+
+.img-odin{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.odin-text{
+
+    display: flex;
+    height: 100%;
     font-family: Bosch,  sans-serif;
+    font-size: 3vh;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 .credits{
@@ -52,4 +91,140 @@ body{
     bottom: 1%;
     width:100%;
 
+}
+
+
+.header{
+    background: var(--background-color);
+    height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items:left;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--form-color);
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+    box-shadow: 4px 4px 4px 3px rgb(0 0 0 / 60%);
+
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F7F8;
+
+    border-radius: 3px;
+    
+    width: 100%;
+    padding: 50px;
+
+  }
+
+
+
+.form-row {
+margin-bottom: 40px;
+display: flex;
+justify-content:center;
+gap: 20%;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+
+.form-row input {
+display: flex;
+background-color: #FFFFFF;
+border: 1px solid #D6D9DC;
+border-radius: 7px;
+width: 100%;
+padding: 5px;
+font-size: 14px;
+}
+
+.form-row label {
+margin-bottom: 10px;
+}
+
+.row-elem{
+    display: flex;
+    flex-direction: column;
+
+}
+    
+.footer{
+    box-shadow: 4px 4px 4px 3px rgb(0 0 0 / 100%);
+    background: var(--background-color);
+    height: var(--footer-height);
+}
+
+.form-area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+first-block{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    
+}
+
+
+btn-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3%;
+    font-size: large;
+}
+
+.btn_ca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #167419;
+    color: white;
+    padding: 14px 15px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    font-size: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.322);
+    width: max-content;
+}
+
+.btn_ca:hover{
+    background-color: #0d4f0d;
+}
+
+
+.form-row input[type='tel']:invalid,
+.form-row input[type='password']:invalid,
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 2px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;
+}
+
+.form-row input[type='tel']:valid,
+.form-row input[type='password']:valid,
+.form-row input[type='text']:valid,
+.form-row input[type='email']:valid {
+  border: 2px solid #4bdd4b;
+  color: #4bdd4b;
+}
+
+
+.title{
+    display: flex;
+    padding-left: 3%;
 }
