@@ -13,6 +13,8 @@ body{
     display: flex;
     flex-direction: row;
     margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -28,6 +30,7 @@ body{
     flex: 2;
     background-color:blanchedalmond;
     height: 100vh;
+    width: 67%;
 }
 
 .img-container{
@@ -35,7 +38,7 @@ body{
     display: flex;
     flex: 1 ;
     height: 100vh;
-    width: min(1000px, 33%);
+    width:  33%;
     
 
 }
@@ -90,6 +93,7 @@ a:link{
     position:absolute;
     bottom: 1%;
     width:100%;
+    flex-wrap: nowrap;
 
 }
 
@@ -102,6 +106,7 @@ a:link{
     align-items:left;
     flex-direction: column;
     padding: 3%;
+
 }
 
 .content{
@@ -109,7 +114,7 @@ a:link{
     flex-direction: column;
     background-color: var(--form-color);
     height: calc(100vh - var(--header-height) - var(--footer-height));
-    box-shadow: 4px 4px 4px 3px rgb(0 0 0 / 60%);
+    box-shadow: 0px 0px 3px 3px rgb(0 0 0 / 60%);
 
 }
 
@@ -121,7 +126,6 @@ a:link{
     border-radius: 3px;
     
     width: 100%;
-    padding: 50px;
 
   }
 
@@ -157,7 +161,8 @@ margin-bottom: 10px;
 }
     
 .footer{
-    box-shadow: 4px 4px 4px 3px rgb(0 0 0 / 100%);
+    display: flex;
+    box-shadow: 0px 0px 4px 4px rgb(0 0 0 / 40%);
     background: var(--background-color);
     height: var(--footer-height);
 }
@@ -165,7 +170,6 @@ margin-bottom: 10px;
 .form-area{
     display: flex;
     justify-content: space-evenly;
-    align-items: stretch;
     height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 first-block{
@@ -179,10 +183,9 @@ first-block{
 btn-block{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100%;
-    margin: 3%;
     font-size: large;
+    padding: 3%;
 }
 
 .btn_ca{
